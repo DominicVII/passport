@@ -3,15 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>The American Caesar: Dominic Z. Taylor</title>
+<title>Passport</title>
 <meta name="description" content="A personal passport: artifacts, interpretations, milestones, a political compass, writing, and a news view with counter-headlines. Kept on this device.">
 <meta name="theme-color" content="#6d1f1f">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Passport">
 <link rel="manifest" href="manifest.webmanifest">
-<link rel="icon" type="image/svg+xml" href="icon.svg">
-<link rel="apple-touch-icon" href="icon.svg">
 <style>
   :root {
     color-scheme: light;
@@ -384,7 +382,7 @@ function uid() { return Date.now().toString(36) + Math.random().toString(36).sli
 
 /* ---------- helpers ---------- */
 
-const esc = v => String(v ?? "").replace(/[&<>"']/g, c => ({ "&": "&", "<": "<", ">": ">", '"': """, "'": "&#39;" }[c]));
+const esc = v => String(v ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const safeUrl = u => /^https?:\/\//.test(u || "") ? esc(u) : "#";
 const wordCount = text => (text.trim().match(/\S+/g) || []).length;
 
@@ -858,7 +856,7 @@ function render() {
   app.innerHTML = `
     <header class="masthead">
       <h1>Passport</h1>
-      <div class="sub">The American Caesar, by Dominic Z. Taylor · Kept on this device</div>
+      <div class="sub">Kept on this device</div>
     </header>
     <nav class="tabs" role="tablist">
       ${TABS.map(t => `<button class="tab" role="tab" aria-selected="${ui.tab === t.id}" data-action="tab" data-id="${t.id}">${t.label}</button>`).join("")}

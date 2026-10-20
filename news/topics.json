@@ -1,0 +1,6 @@
+[
+  { "id": "economy", "label": "Economy", "keywords": ["economy", "inflation", "jobs", "tariff", "tax", "recession", "wages"] },
+  { "id": "elections", "label": "Elections", "keywords": ["election", "vote", "ballot", "campaign", "primary", "voter"] },
+  { "id": "courts", "label": "Courts", "keywords": ["supreme court", "court", "judge", "ruling", "lawsuit"] },
+  { "id": "foreign-policy", "label": "Foreign policy", "keywords": ["nato", "sanctions", "treaty", "war", "ceasefire", "diplomacy"] }
+]
