@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="72" fill="#6d1f1f"/>
+  <circle cx="256" cy="210" r="70" fill="none" stroke="#a9812f" stroke-width="8"/>
+  <path d="M186 210 Q 256 140 326 210" fill="none" stroke="#a9812f" stroke-width="6"/>
+  <text x="256" y="230" font-family="Georgia, 'Times New Roman', serif" font-size="92" font-weight="700" fill="#a9812f" text-anchor="middle" dominant-baseline="middle">DZT</text>
+  <path d="M140 320 Q 256 400 372 320" fill="none" stroke="#a9812f" stroke-width="14" stroke-linecap="round"/>
+  <path d="M160 345 Q 256 395 352 345" fill="none" stroke="#a9812f" stroke-width="8" stroke-linecap="round"/>
+  <path d="M180 365 Q 256 390 332 365" fill="none" stroke="#a9812f" stroke-width="4" stroke-linecap="round"/>
+</svg>
