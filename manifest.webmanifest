@@ -1,0 +1,27 @@
+{
+  "name": "The American Caesar: Dominic Z. Taylor",
+  "short_name": "Passport",
+  "description": "A personal passport: artifacts, interpretations, milestones, a political compass, writing, and a news view with counter-headlines. Kept on this device.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#6d1f1f",
+  "background_color": "#ede4d0",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["personalization", "productivity", "education"],
+  "lang": "en-US"
+}
