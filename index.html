@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Passport</title>
+<title>The American Caesar: Dominic Z. Taylor</title>
 <meta name="description" content="A personal passport: artifacts, interpretations, milestones, a political compass, writing, and a news view with counter-headlines. Kept on this device.">
 <meta name="theme-color" content="#6d1f1f">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -921,7 +921,7 @@ function render() {
   app.innerHTML = `
     <header class="masthead">
       <h1>Passport</h1>
-      <div class="sub">Kept on this device</div>
+      <div class="sub">Knowledge for the people · <details style="display:inline"><summary style="display:inline;cursor:pointer;color:var(--imperial);text-decoration:underline">The American Caesar, by Dominic Z. Taylor</summary><blockquote style="margin:10px auto 0;max-width:520px;font-style:italic;color:var(--ink)">“Giving the knowledge to the masses as the American Caesar, as that is for the people.”<cite style="display:block;font-size:12px;color:var(--muted);margin-top:4px">Dominic Z. Taylor</cite></blockquote></details> · Kept on this device</div>
     </header>
     <nav class="tabs" role="tablist">
       ${TABS.map(t => `<button class="tab" role="tab" aria-selected="${ui.tab === t.id}" data-action="tab" data-id="${t.id}">${t.label}</button>`).join("")}
