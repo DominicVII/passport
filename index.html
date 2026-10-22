@@ -234,6 +234,56 @@ const COMPASS_QUESTIONS = [
   { id: 47, axis: "pace", dir: 1, text: "Institutions should earn trust through their record, not be remade by activists." },
   { id: 48, axis: "pace", dir: -1, text: "Government has a duty to correct historic wrongs." },
   { id: 49, axis: "pace", dir: 1, text: "Order and continuity matter more than rapid progress." },
+  { id: 50, axis: "econ", dir: -1, text: "Antitrust enforcement should target the largest firms more often." },
+  { id: 51, axis: "econ", dir: 1, text: "Competition works better than regulation at lowering prices." },
+  { id: 52, axis: "econ", dir: -1, text: "The government should set limits on rent increases." },
+  { id: 53, axis: "econ", dir: 1, text: "Free trade agreements benefit most households." },
+  { id: 54, axis: "econ", dir: -1, text: "Public pensions should be expanded, even if that raises taxes." },
+  { id: 55, axis: "econ", dir: 1, text: "Entrepreneurs should face fewer rules before opening a business." },
+  { id: 56, axis: "econ", dir: -1, text: "Banks should be regulated more strictly after financial crises." },
+  { id: 57, axis: "econ", dir: -1, text: "Wealth taxes on large fortunes are a fair way to fund public needs." },
+  { id: 58, axis: "econ", dir: 1, text: "Private charity can do more than government welfare programs." },
+  { id: 59, axis: "econ", dir: 1, text: "Workers should be free to bargain for higher pay without government limits." },
+  { id: 60, axis: "liberty", dir: 1, text: "Stronger penalties for public disorder are needed." },
+  { id: 61, axis: "liberty", dir: -1, text: "Speech that incites violence should still be protected." },
+  { id: 62, axis: "liberty", dir: -1, text: "Emergency powers should expire quickly, even in a crisis." },
+  { id: 63, axis: "liberty", dir: 1, text: "Public safety should outweigh privacy when the two conflict." },
+  { id: 64, axis: "liberty", dir: -1, text: "Journalists should be free to publish classified material." },
+  { id: 65, axis: "liberty", dir: -1, text: "Police should face independent review for misconduct." },
+  { id: 66, axis: "liberty", dir: 1, text: "Order in the streets matters more than the right to assemble." },
+  { id: 67, axis: "liberty", dir: 1, text: "Government should be able to monitor online communications for threats." },
+  { id: 68, axis: "liberty", dir: -1, text: "Individuals should be free to refuse vaccines and similar mandates." },
+  { id: 69, axis: "liberty", dir: 1, text: "Mandatory national service is a fair price for civic duty." },
+  { id: 70, axis: "faith", dir: 1, text: "A nation's laws should reflect the moral teachings of its people's faith." },
+  { id: 71, axis: "faith", dir: -1, text: "Public money should not fund religious schools." },
+  { id: 72, axis: "faith", dir: -1, text: "Prayer in public schools is a matter for local communities." },
+  { id: 73, axis: "faith", dir: -1, text: "Religious charities should keep their freedom to hire by faith." },
+  { id: 74, axis: "faith", dir: 1, text: "A person's faith is a sound guide in voting decisions." },
+  { id: 75, axis: "faith", dir: 1, text: "Government should defend religious liberty even when it conflicts with other rights." },
+  { id: 76, axis: "faith", dir: -1, text: "Religion belongs in private life, not in government." },
+  { id: 77, axis: "faith", dir: 1, text: "Clergy should be free to speak about politics from the pulpit." },
+  { id: 78, axis: "faith", dir: -1, text: "Courts should not decide questions of religious doctrine." },
+  { id: 79, axis: "faith", dir: 1, text: "The Ten Commandments belong in public buildings." },
+  { id: 80, axis: "constitution", dir: -1, text: "Constitutional rights should be read broadly to protect new freedoms." },
+  { id: 81, axis: "constitution", dir: 1, text: "The framers would be surprised by how courts read the Constitution today." },
+  { id: 82, axis: "constitution", dir: 1, text: "A judge's personal values should have no role in interpreting the Constitution." },
+  { id: 83, axis: "constitution", dir: 1, text: "States should be able to set rules the federal government cannot override." },
+  { id: 84, axis: "constitution", dir: -1, text: "The Fourteenth Amendment should be read to cover all citizens equally." },
+  { id: 85, axis: "constitution", dir: -1, text: "Constitutional amendments are too hard to pass, and that should change." },
+  { id: 86, axis: "constitution", dir: 1, text: "Federal laws should be struck down when they exceed Congress's listed powers." },
+  { id: 87, axis: "constitution", dir: -1, text: "Unwritten principles can be part of constitutional law." },
+  { id: 88, axis: "constitution", dir: 1, text: "The Constitution is best read as a fixed charter, not an evolving one." },
+  { id: 89, axis: "constitution", dir: 1, text: "The Electoral College should be kept as the framers designed it." },
+  { id: 90, axis: "pace", dir: 1, text: "Institutions should be given time to adapt before they are overhauled." },
+  { id: 91, axis: "pace", dir: -1, text: "Radical reform is sometimes needed to correct decades of harm." },
+  { id: 92, axis: "pace", dir: -1, text: "Public opinion should move the law faster than it does now." },
+  { id: 93, axis: "pace", dir: 1, text: "Stability is worth more than the next reform." },
+  { id: 94, axis: "pace", dir: 1, text: "Change that is too fast often makes things worse." },
+  { id: 95, axis: "pace", dir: -1, text: "Social movements have often been right to push faster than leaders wanted." },
+  { id: 96, axis: "pace", dir: 1, text: "Reform should wait until a broad consensus forms." },
+  { id: 97, axis: "pace", dir: 1, text: "The status quo deserves a strong presumption against change." },
+  { id: 98, axis: "pace", dir: -1, text: "Waiting for consensus has let injustices last too long." },
+  { id: 99, axis: "pace", dir: 1, text: "Gradual change is the most reliable way to protect liberty." },
 ];
 // Rough reference points, editable. Approximate placements from general knowledge, not measurements.
 const FIGURES = [
@@ -294,7 +344,7 @@ const IDEOLOGIES = [
   { name: "Classical liberalism", blurb: "Individual rights, limited government, and free markets.", wiki: "https://en.wikipedia.org/wiki/Classical_liberalism" },
   { name: "Hamiltonian federalism", blurb: "A strong national government, a national bank, and public credit.", wiki: "https://en.wikipedia.org/wiki/Federalist_Party" },
   { name: "Jeffersonian republicanism", blurb: "Agrarian virtue, limited national power, and the states as checks.", wiki: "https://en.wikipedia.org/wiki/Democratic-Republican_Party" },
-  { name: "Jacksonian democracy", blurb: "Wider white male suffrage, executive power, and hostility to banks.", wiki: "https://en.wikipedia.org/wiki/Jacksonian_democracy" },
+  { name: "Jacksonian democracy", blurb: "Wider male suffrage, executive power, and hostility to banks.", wiki: "https://en.wikipedia.org/wiki/Jacksonian_democracy" },
   { name: "States' rights", blurb: "Power kept with the states against the national government.", wiki: "https://en.wikipedia.org/wiki/States%27_rights" },
   { name: "Progressivism", blurb: "Expert administration and regulation to meet industrial-age problems.", wiki: "https://en.wikipedia.org/wiki/Progressivism_in_the_United_States" },
   { name: "Conservatism", blurb: "Tradition, gradual change, and skepticism of rapid reform.", wiki: "https://en.wikipedia.org/wiki/Conservatism_in_the_United_States" },
@@ -327,7 +377,7 @@ const TABS = [
   { id: "writing", label: "Writing" },
   { id: "news", label: "News" },
 ];
-const ui = { tab: "passport", filter: "all", query: "", editing: null, composing: false, openBook: null, bookQuery: "", news: null, promptIndex: 0, exportText: null, figure: null };
+const ui = { tab: "passport", filter: "all", query: "", editing: null, composing: false, openBook: null, bookQuery: "", news: null, promptIndex: 0, exportText: null, figure: null, qIndex: null };
 let state = load();
 let toastTimer = null;
 
@@ -594,6 +644,13 @@ function fmtScore(v, axis) {
   return `${pct}% ${v > 0 ? axis.high : axis.low}`;
 }
 
+// The statement on screen: the first unanswered one, unless the reader has moved with Back or Next.
+const currentQIndex = () => {
+  if (ui.qIndex !== null) return ui.qIndex;
+  const open = COMPASS_QUESTIONS.findIndex(q => !state.compass[q.id]);
+  return open < 0 ? 0 : open;
+};
+
 function compassHtml() {
   const sc = compassScores();
   const complete = sc.answered === COMPASS_QUESTIONS.length;
@@ -611,19 +668,27 @@ function compassHtml() {
          <div class="muted" style="margin-top:10px">Matches compare all five dimensions. Reference placements are rough and editable in the app's source. Use this to reflect, not to settle anything.</div>
        </div>`
     : `<div class="card"><div class="empty">Answer all ${COMPASS_QUESTIONS.length} statements to see where you stand. ${sc.answered} of ${COMPASS_QUESTIONS.length} answered.</div></div>`;
-  const questions = COMPASS_QUESTIONS.map(q => `
-    <div class="q">
-      <div class="q-text">${esc(q.text)}</div>
+  const qi = currentQIndex();
+  const q = COMPASS_QUESTIONS[qi];
+  const last = COMPASS_QUESTIONS.length - 1;
+  const pct = Math.round((sc.answered / COMPASS_QUESTIONS.length) * 100);
+  const questionCard = `
+    <div class="card">
+      <div class="muted">${sc.answered} of ${COMPASS_QUESTIONS.length} answered</div>
+      <div style="height:8px;margin:6px 0 12px;background:var(--parchment-2);border:0.5px solid var(--line);border-radius:6px;overflow:hidden"><i style="display:block;height:100%;width:${pct}%;background:var(--imperial)"></i></div>
+      <div class="muted">Statement ${qi + 1} of ${COMPASS_QUESTIONS.length} · ${esc(COMPASS_AXES[q.axis].title)}</div>
+      <div class="q-text" style="margin-top:8px;font-size:17px">${esc(q.text)}</div>
       <div class="scale" role="radiogroup" aria-label="${esc(q.text)}">
         ${[1, 2, 3, 4, 5].map(n => `<label><input type="radio" name="q${q.id}" value="${n}" data-field="compass" data-id="${q.id}" ${state.compass[q.id] === n ? "checked" : ""}>${n}</label>`).join("")}
       </div>
       <div class="scale-ends"><span>Strongly disagree</span><span>Strongly agree</span></div>
-    </div>`).join("");
+      <div class="row" style="margin-top:14px"><button class="ui" data-action="q-prev" ${qi === 0 ? "disabled" : ""}>Back</button><button class="ui" data-action="q-next" ${qi === last ? "disabled" : ""}>Next</button></div>
+    </div>`;
   return `
     <div class="section-label">Political compass</div>
-    <div class="section-sub">Answer honestly. Your answers stay on this device.</div>
+    <div class="section-sub">Answer one statement at a time. Choosing a number moves you to the next statement.</div>
     ${result}
-    <div class="card">${questions}</div>
+    ${questionCard}
     ${complete ? `<div class="foot"><button class="ui" data-action="compass-reset">Clear answers</button></div>` : ""}`;
 }
 
@@ -934,6 +999,8 @@ document.addEventListener("click", async e => {
     case "next-prompt": ui.promptIndex += 1; render(); break;
     case "figure": ui.figure = Number(d.id); render(); break;
     case "figure-back": ui.figure = null; render(); break;
+    case "q-prev": ui.qIndex = Math.max(0, currentQIndex() - 1); render(); break;
+    case "q-next": ui.qIndex = Math.min(COMPASS_QUESTIONS.length - 1, currentQIndex() + 1); render(); break;
     case "compose": ui.composing = true; ui.editing = null; render(); break;
     case "edit": ui.editing = d.id; ui.composing = false; render(); break;
     case "cancel": ui.composing = false; ui.editing = null; render(); break;
@@ -1020,11 +1087,14 @@ document.addEventListener("change", e => {
   const d = el.dataset;
   if (!d.field) return;
   switch (d.field) {
-    case "compass":
+    case "compass": {
+      const at = COMPASS_QUESTIONS.findIndex(q => q.id === Number(d.id));
       state.compass[d.id] = Number(el.value);
+      ui.qIndex = Math.min(at + 1, COMPASS_QUESTIONS.length - 1);
       persist();
       render();
       break;
+    }
     case "chapter-title": {
       const b = state.books.find(x => x.id === d.book);
       const c = b && b.chapters.find(x => x.id === d.id);
